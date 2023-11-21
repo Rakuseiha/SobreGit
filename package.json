@@ -1,11 +1,22 @@
 {
   "name": "package.json",
   "version": "1.0.0",
-  "description": "",
+  "description": "Sobre el proyecto final de Calidad semestre 5",
   "main": "app.js",
   "scripts": {
     "test": "jest"
   },
-  "author": "",
-  "license": "ISC"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rakuseiha/SobreGit.git"
+  },
+  "author": "DanielOspina",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rakuseiha/SobreGit/issues"
+  },
+  "homepage": "https://github.com/Rakuseiha/SobreGit#readme",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
 }
