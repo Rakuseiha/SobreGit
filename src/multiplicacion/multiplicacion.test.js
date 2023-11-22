@@ -8,7 +8,7 @@ test("500 * 4 should be 2000", () => {
 test("Si los datos no son enteros me debe retornar un error", () => {
   const num1=500;
   const num2=4;
-  if(num1 === "" && num2 === ""){
+  if(typeof num1 != "number" || typeof num2 != "number"){
     const result = multiplicacion(num1, num2);
     expect(result).toBe("Datos invalidos (Usa N Ú M E R O S !!🤨)");
   }else{

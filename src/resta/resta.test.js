@@ -8,10 +8,10 @@ test("45 - 20 should be 25", () => {
 test("Si los datos no son enteros me debe retornar un error", () => {
   const num1=4322;
   const num2=76;
-  if(num1 !== "" && num2 !== ""){
+  if(typeof num1 == "number" || typeof num2 == "number"){
     const result = rest(num1, num2);
     expect(result).toBe(4246);
-  }else if(num1 === "" && num2 === ""){
+  }else if(typeof num1 != "number" || typeof num2 != "number"){
     const result = rest(num1, num2);
     expect(result).toBe("Datos invalidos (Usa N Ú M E R O S !!🤨)");
   }

@@ -8,7 +8,7 @@ test("10 + 20 should be 30", () => {
 test("Si los datos no son enteros me debe retornar un error", () => {
   const num1=357;
   const num2=643;
-  if(num1 === "" && num2 === ""){
+  if(typeof num1 != "number" || typeof num2 != "number"){
     const result = sum(num1, num2);
     expect(result).toBe("Datos invalidos (Usa N Ú M E R O S !!🤨)");
   }else{
